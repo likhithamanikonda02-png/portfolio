@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav><b>LIKHITHA<i>_</i></b><div><a href="#badge">badge</a><a href="#layers">stack</a><a href="#log">log</a><a href="#work">work</a></div></nav>
+<nav><b>LIKHITHA<i>_</i></b><div><a href="#badge">badge</a><a href="#layers">stack</a><a href="#log">log</a><a href="#work">work</a><a href="#roles">roles</a></div></nav>
 
 <section class="hero" id="top">
   <div class="mono">[ system online ]</div>
@@ -17,7 +17,7 @@
     <span class="live">LIVE</span>
     <!-- hero.mp4 = your HeyGen video, photo.jpg = your photo -->
     <video id="hv" src="hero1.mp4" poster="photo.jpg" muted playsinline autoplay></video>
-    <div class="ph" id="vph">hero1.mp4 not found</div>
+    <div class="ph" id="vph">hero.mp4 not found</div>
     <button id="snd">tap for sound</button>
   </div>
   <h1>Hi, I'm <em id="typed">Likhitha</em><span class="cursor"></span></h1>
@@ -75,8 +75,9 @@
     <div class="log"><div><div class="mono">log 01</div><div class="n">3.98</div></div><p>GPA in my M.S. in Cybersecurity &amp; Information Assurance</p></div>
     <div class="log"><div><div class="mono">log 02</div><div class="n">RAG</div></div><p>Built and deployed a RAG chatbot (an AI that answers from a company's own documents) for AI SaaC Solutions</p></div>
     <div class="log"><div><div class="mono">log 03</div><div class="n">SIEM</div></div><p>Building a Wazuh SIEM &amp; EDR lab for threat detection</p></div>
-    <div class="log"><div><div class="mono">log 04</div><div class="n">4</div></div><p>Security and full-stack projects on this site</p></div>
-    <div class="log"><div><div class="mono">log 05</div><div class="n">SY0-701</div></div><p>CompTIA Security+ in progress</p></div>
+    <div class="log"><div><div class="mono">log 04</div><div class="n">6</div></div><p>Security and full-stack projects on this site</p></div>
+    <div class="log"><div><div class="mono">log 05</div><div class="n">8</div></div><p>Roles played at AI SaaC Solutions</p></div>
+    <div class="log"><div><div class="mono">log 06</div><div class="n">SY0-701</div></div><p>CompTIA Security+ in progress</p></div>
   </div>
 </section>
 
@@ -85,10 +86,12 @@
   <h2>Things I've built</h2>
   <p class="sub">&nbsp;</p>
   <div class="grid">
-    <div class="proj"><div class="mono">project 01</div><h3>Perimeter</h3><p>Security monitoring dashboard that flags threats from nginx logs.</p><div class="tags"><span>React</span><span>Flask</span><span>nginx</span></div></div>
-    <div class="proj"><div class="mono">project 02</div><h3>Screen</h3><p>ATS resume screener that matches resumes to job descriptions and writes tailored versions.</p><div class="tags"><span>React</span><span>NLP</span></div></div>
-    <div class="proj"><div class="mono">project 03</div><h3>Prompt Injection Research</h3><p>Research on how prompt injection attacks on AI models work, and how to defend against them.</p><div class="tags"><span>LLM</span><span>AI security</span></div></div>
-    <div class="proj"><div class="mono">project 04</div><h3>Visitor Tracker</h3><p>Visitor and interaction tracker deployed with Docker/Podman and Jenkins.</p><div class="tags"><span>Docker</span><span>Jenkins</span></div></div>
+    <article class="proj"><div class="mono">project 01 <span class="status">In progress</span></div><h3>Perimeter</h3><p>Security dashboard that shows attacks on a web server as they happen.</p><div class="tags"><span>React</span><span>Flask</span><span>nginx</span></div><button class="more" type="button">Details +</button><ul class="det"><li>React dashboard with a Flask (Python) backend.</li><li>Reads nginx web server logs to detect brute-force login attempts and scanning attacks.</li></ul></article>
+    <article class="proj"><div class="mono">project 02 <span class="status">In progress</span></div><h3>Screen</h3><p>ATS resume screener that scores how well a resume fits a job.</p><div class="tags"><span>React</span><span>Claude API</span><span>NLP</span></div><button class="more" type="button">Details +</button><ul class="det"><li>Matches a resume to a job description and checks ATS (applicant tracking system) formatting.</li><li>Writes a tailored resume with the Claude API.</li></ul></article>
+    <article class="proj"><div class="mono">project 03 <span class="status">In progress</span></div><h3>SIEM &amp; EDR Lab</h3><p>Hands-on lab for monitoring endpoints and investigating alerts.</p><div class="tags"><span>Wazuh</span><span>Ubuntu</span><span>Python</span></div><button class="more" type="button">Details +</button><ul class="det"><li>Wazuh SIEM (a tool that collects and analyzes security logs) with Linux endpoints.</li><li>Detection rules for failed logins and suspicious sign-in activity.</li><li>Python scripts that summarize events and draft incident reports.</li></ul></article>
+    <article class="proj"><div class="mono">project 04</div><h3>Prompt Injection Research</h3><p>How attackers trick AI models, and how to defend against it.</p><div class="tags"><span>Python</span><span>LLM</span><span>AI security</span></div><button class="more" type="button">Details +</button><ul class="det"><li>Python framework tested against LLaMA models through the Groq API.</li><li>50 adversarial prompts across five attack categories.</li><li>Published on GitHub.</li></ul></article>
+    <article class="proj"><div class="mono">project 05</div><h3>Company Website</h3><p>The AI SaaC Solutions website, built from scratch.</p><div class="tags"><span>HTML/CSS/JS</span><span>nginx</span><span>CI/CD</span></div><button class="more" type="button">Details +</button><ul class="det"><li>Hero slider, daily rotating quote and a privacy-friendly cookie consent banner.</li><li>Removed third-party trackers and fixed a cross-site scripting (XSS) risk.</li><li>Deploys automatically with GitHub Actions and Jenkins.</li></ul></article>
+    <article class="proj"><div class="mono">project 06</div><h3>Visitor Tracker</h3><p>Visitor activity tracker with a full DevOps pipeline.</p><div class="tags"><span>Podman</span><span>Jenkins</span><span>nginx</span></div><button class="more" type="button">Details +</button><ul class="det"><li>Runs in a Podman container behind an nginx reverse proxy.</li><li>Jenkins pipeline builds and deploys it automatically.</li></ul></article>
   </div>
 </section>
 
@@ -124,6 +127,14 @@
       </ul>
     </div>
   </div>
+</section>
+
+<section id="roles" class="rv">
+  <div class="mono">06 / roles</div>
+  <h2>Roles at AI SaaC</h2>
+  <p class="sub">Eight hats, one team. Tap a role to see what I did.</p>
+  <div class="chips" id="chips" role="tablist"></div>
+  <div class="panel" id="panel"></div>
 </section>
 
 <footer>
@@ -185,6 +196,38 @@ layers.forEach(function(l,i){
   d.querySelector('button').addEventListener('click',function(){d.classList.toggle('open')});
   lay.appendChild(d);
 });
+
+
+// project cards: tap Details to open
+document.querySelectorAll('.proj .more').forEach(function(b){
+  b.addEventListener('click',function(){
+    var c=b.closest('.proj');c.classList.toggle('open');
+    b.textContent=c.classList.contains('open')?'Details \u2212':'Details +';
+  });
+});
+
+// roles: tabs + one panel
+var ROLES=[
+['Software developer',['Built the company RAG chatbot (an AI assistant that answers from the company\'s own documents) and its deployment.','Built the company website from scratch, from the image slider to the cookie banner.','Debug and fix issues across the stack, using Claude Code and Cursor to speed up coding, refactoring and testing.']],
+['AI engineer',['Build multi-step AI agents with LangGraph and CrewAI that call tools and automate tasks.','Develop AI apps in Node.js and TypeScript, connected to outside services through REST APIs and MCP.','Compared vector databases (Qdrant, pgvector, LanceDB) and chose the most cost-effective setup for the server.']],
+['Security analyst',['Review web traffic logs and spot bots and probing attempts.','Harden the site: cookie consent, content security rules, no third-party trackers, a cross-site scripting fix.','Research prompt injection attacks on AI models.']],
+['Compliance analyst',['Wrote SBOM (software bill of materials) compliance briefs based on CISA and G7 guidance.','Drafted a confidential document handling policy.','Built reference materials on cybersecurity auditing authorities.']],
+['DevOps engineer',['Run two deployment pipelines, GitHub Actions and Jenkins, and fixed their failures.','Administer the Linux server: nginx, SSL certificates, firewall and SSH key access.','Containerize and deploy services with Docker and Kubernetes.']],
+['Web designer',['Edited and color-matched the company logo.','Designed the look of the site, including frosted-glass effects and hero images.','Wrote the prompts used to generate AI hero visuals.']],
+['Trainer & writer',['Created training program materials and documentation for a trainee cohort.','Wrote Git workflow documentation for the team.','Helped prepare the early business pitch deck.']],
+['Researcher & presenter',['Built an 18-slide deck explaining RAG to a non-technical audience.','Presented debugging case studies to the team.','Wrote reference guides on RAG, vector databases, MCP and CVEs.']]
+];
+var chips=document.getElementById('chips'),panel=document.getElementById('panel');
+function show(i){
+  Array.prototype.forEach.call(chips.children,function(c,j){c.classList.toggle('on',i===j);c.setAttribute('aria-selected',i===j)});
+  var r=ROLES[i];
+  panel.innerHTML='<div class="mono">role '+('0'+(i+1)).slice(-2)+' of 08</div><h3>'+r[0].replace(/&/g,'&amp;')+'</h3><ul>'+r[1].map(function(x){return '<li>'+x.replace(/&/g,'&amp;')+'</li>'}).join('')+'</ul>';
+}
+ROLES.forEach(function(r,i){
+  var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('role','tab');
+  b.textContent=r[0];b.addEventListener('click',function(){show(i)});chips.appendChild(b);
+});
+show(0);
 
 // reveal on scroll
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.1});
