@@ -4,154 +4,191 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Likhitha | Cybersecurity Analyst</title>
-<meta name="description" content="Portfolio of Likhitha, cybersecurity analyst and software engineer.">
+<meta name="description" content="Portfolio of Likhitha, cybersecurity analyst. Security tools, monitoring dashboards and AI chatbots.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav><b>LIKHITHA</b><div><a href="#id">About</a><a href="#skills">Skills</a><a href="#wins">Wins</a><a href="#work">Work</a></div></nav>
+<nav><b>LIKHITHA<i>_</i></b><div><a href="#badge">badge</a><a href="#layers">stack</a><a href="#log">log</a><a href="#work">work</a></div></nav>
 
-<section class="hero">
-  <!-- Put your talking video at hero.mp4 (vertical, ~15s) and a photo at photo.jpg -->
-  <div class="video-wrap">
-    <video id="hv" src="hero1.mp4" poster="photo.jpg" muted playsinline autoplay></video>
-    <div class="ph" id="vph">Add hero1.mp4 here</div>
-    <button class="btn" id="snd" style="position:absolute;bottom:12px;font-size:12px;padding:6px 14px;background:#000;color:#fff">Tap for sound</button>
+<section class="hero" id="top">
+  <div class="mono">[ system online ]</div>
+  <div class="feed">
+    <span class="br tl"></span><span class="br tr"></span><span class="br bl"></span><span class="br brr"></span>
+    <span class="live">LIVE</span>
+    <!-- hero.mp4 = your HeyGen video, photo.jpg = your photo -->
+    <video id="hv" src="hero.mp4" poster="photo.jpg" muted playsinline autoplay></video>
+    <div class="ph" id="vph">hero.mp4 not found</div>
+    <button id="snd">tap for sound</button>
   </div>
-  <h1>Hi, I'm Likhitha.</h1>
-  <p>Cybersecurity analyst. I build security tooling, monitoring dashboards and AI chatbots.</p>
-  <a class="btn" href="#work">See my work</a>
+  <h1>Hi, I'm <em id="typed">Likhitha</em><span class="cursor"></span></h1>
+  <p>I protect systems, and I build things that keep them safe.</p>
+  <a class="btn" href="#badge">Take a look around</a>
 </section>
 
-<section id="id" class="rv">
-  <h2>My ID card</h2>
-  <p class="sub">Tap the card to flip it.</p>
-  <div class="card-scene">
-    <div class="id" id="idcard">
+<section id="badge" class="rv">
+  <div class="mono">01 / identity</div>
+  <h2>Access badge</h2>
+  <p class="sub">Tap the badge to flip it.</p>
+  <div class="scene">
+    <div class="badge" id="bd">
       <div class="face front">
-        <div class="lanyard"></div>
-        <div class="photo"><img src="photo.jpg" alt="" onerror="this.remove();this.parentNode.textContent='L'"></div>
+        <div class="slot"></div>
+        <div class="topline"><span>SECURITY TEAM</span><span>ID 001</span></div>
+        <div class="photo"><img src="photo.jpg" alt="Likhitha" onerror="var p=this.parentNode;this.remove();p.textContent='L'"></div>
         <h3>Likhitha</h3>
         <div class="role">Cybersecurity Analyst</div>
         <dl>
           <dt>Company</dt><dd>AI SaaC Solutions LLC</dd>
           <dt>Specialty</dt><dd>AppSec &middot; SIEM &middot; AI security</dd>
         </dl>
-        <div class="barcode"></div>
+        <div class="stamp">ACCESS GRANTED</div>
       </div>
       <div class="face back">
-        <h3>Credentials</h3>
-        <dl>
+        <div class="slot"></div>
+        <div class="topline"><span>CREDENTIALS</span><span>ID 001</span></div>
+        <dl style="margin-top:0">
           <dt>Degree</dt><dd>M.S. Cybersecurity &amp; Information Assurance</dd>
           <dt>GPA</dt><dd>3.98</dd>
           <dt>Earlier degree</dt><dd>B.S. Computer Science, Electronics &amp; Mathematics</dd>
           <dt>Working on</dt><dd>CompTIA Security+</dd>
-          <dt>Contact</dt><dd>likhithamanikonda02@gmail.com</dd>
+          <dt>Email</dt><dd>likhithamanikonda02@gmail.com</dd>
           <dt>GitHub</dt><dd>likhithamanikonda02-png</dd>
         </dl>
-        <div class="barcode"></div>
+        <div class="stamp">VERIFIED</div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="skills" class="rv">
-  <h2>Periodic table of skills</h2>
-  <p class="sub">Hover over an element.</p>
-  <div class="pt" id="pt"></div>
+<section id="layers" class="rv">
+  <div class="mono">02 / skills</div>
+  <h2>Defense in depth</h2>
+  <p class="sub">Good security has layers, and so does my skill set. Tap a layer to open it.</p>
+  <div class="layers" id="lay"></div>
 </section>
 
-<section id="wins" class="rv">
-  <h2>Achievements</h2>
-  <p class="sub">Scroll sideways &rarr;</p>
+<section id="log" class="rv">
+  <div class="mono">03 / highlights</div>
+  <h2>Logbook</h2>
+  <p class="sub">Swipe sideways &rarr;</p>
   <div class="scroller">
-    <div class="ach"><div class="n">3.98</div><p>GPA in M.S. Cybersecurity &amp; Information Assurance</p></div>
-    <div class="ach"><div class="n">RAG</div><p>Built and deployed a RAG chatbot for AI SaaC Solutions</p></div>
-    <div class="ach"><div class="n">SIEM</div><p>Building a Wazuh SIEM &amp; EDR detection lab</p></div>
-    <div class="ach"><div class="n">4</div><p>Security and full-stack projects on this site</p></div>
-    <div class="ach"><div class="n">SY0-701</div><p>CompTIA Security+ in progress</p></div>
+    <div class="log"><div><div class="mono">log 01</div><div class="n">3.98</div></div><p>GPA in my M.S. in Cybersecurity &amp; Information Assurance</p></div>
+    <div class="log"><div><div class="mono">log 02</div><div class="n">RAG</div></div><p>Built and deployed a RAG chatbot (an AI that answers from a company's own documents) for AI SaaC Solutions</p></div>
+    <div class="log"><div><div class="mono">log 03</div><div class="n">SIEM</div></div><p>Building a Wazuh SIEM &amp; EDR lab for threat detection</p></div>
+    <div class="log"><div><div class="mono">log 04</div><div class="n">4</div></div><p>Security and full-stack projects on this site</p></div>
+    <div class="log"><div><div class="mono">log 05</div><div class="n">SY0-701</div></div><p>CompTIA Security+ in progress</p></div>
   </div>
 </section>
 
 <section id="work" class="rv">
-  <h2>Projects</h2>
-  <p class="sub">Things I've built.</p>
+  <div class="mono">04 / projects</div>
+  <h2>Things I've built</h2>
+  <p class="sub">&nbsp;</p>
   <div class="grid">
-    <div class="proj"><h3>Perimeter</h3><p>Security monitoring dashboard that flags threats from nginx logs.</p><div class="tags"><span>React</span><span>Flask</span><span>nginx</span></div></div>
-    <div class="proj"><h3>Screen</h3><p>ATS resume screener that matches resumes to job descriptions and writes tailored versions.</p><div class="tags"><span>React</span><span>NLP</span></div></div>
-    <div class="proj"><h3>Prompt Injection Research</h3><p>Research on how LLM prompt injection attacks work and how to defend against them.</p><div class="tags"><span>LLM</span><span>AI Security</span></div></div>
-    <div class="proj"><h3>Visitor Tracker</h3><p>Visitor and interaction tracker deployed with Docker/Podman and Jenkins.</p><div class="tags"><span>Docker</span><span>Jenkins</span></div></div>
-  </div>
-
-  <h2 style="margin-top:64px">Experience</h2>
-  <div class="job" style="margin-top:24px">
-    <h3>Cybersecurity Analyst Intern, AI SaaC Solutions LLC</h3>
-    <div class="when">Boston-area AI security and compliance company</div>
-    <ul>
-      <li>Lead development of a RAG chatbot for the company website.</li>
-      <li>Run website infrastructure and deployment pipelines.</li>
-      <li>Build internal security tooling.</li>
-    </ul>
-  </div>
-  <div class="job" style="margin-top:32px">
-    <h3>Associate Software Engineer, Nayagara Technologies</h3>
-    <div class="when">Bengaluru, India &middot; Apr 2023 &ndash; Mar 2024</div>
-    <ul>
-      <li>Developed and maintained Java and Spring Boot software as part of a cross-functional engineering team.</li>
-      <li>Worked with senior engineers on design, code reviews and debugging to meet performance standards.</li>
-      <li>Contributed to a Health Insurance Plans Marketplace project (Java, Spring Boot, Hibernate, JSP, SQL).</li>
-    </ul>
-  </div>
-  <div class="job" style="margin-top:32px">
-    <h3>Graduate Teaching Assistant, Virginia University of Science and Technology</h3>
-    <div class="when">Aug &ndash; Dec 2025</div>
-    <ul>
-      <li>CSIS 530: System Assessment and Security Risk Analysis</li>
-      <li>CSIS 690: Capstone Project / Independent Study</li>
-    </ul>
+    <div class="proj"><div class="mono">project 01</div><h3>Perimeter</h3><p>Security monitoring dashboard that flags threats from nginx logs.</p><div class="tags"><span>React</span><span>Flask</span><span>nginx</span></div></div>
+    <div class="proj"><div class="mono">project 02</div><h3>Screen</h3><p>ATS resume screener that matches resumes to job descriptions and writes tailored versions.</p><div class="tags"><span>React</span><span>NLP</span></div></div>
+    <div class="proj"><div class="mono">project 03</div><h3>Prompt Injection Research</h3><p>Research on how prompt injection attacks on AI models work, and how to defend against them.</p><div class="tags"><span>LLM</span><span>AI security</span></div></div>
+    <div class="proj"><div class="mono">project 04</div><h3>Visitor Tracker</h3><p>Visitor and interaction tracker deployed with Docker/Podman and Jenkins.</p><div class="tags"><span>Docker</span><span>Jenkins</span></div></div>
   </div>
 </section>
 
-<footer>&copy; 2026 Likhitha &middot; likhithamanikonda02@gmail.com</footer>
+<section id="exp" class="rv">
+  <div class="mono">05 / experience</div>
+  <h2>Where I've worked</h2>
+  <p class="sub">&nbsp;</p>
+  <div class="timeline">
+    <div class="job">
+      <h3>Cybersecurity Analyst Intern</h3>
+      <div class="when">AI SaaC Solutions LLC</div>
+      <ul>
+        <li>Lead development of a RAG chatbot for the company website.</li>
+        <li>Run website infrastructure and deployment pipelines.</li>
+        <li>Build internal security tooling.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Graduate Teaching Assistant</h3>
+      <div class="when">Virginia University of Science and Technology &middot; Aug&ndash;Dec 2025</div>
+      <ul>
+        <li>CSIS 530: System Assessment and Security Risk Analysis</li>
+        <li>CSIS 690: Capstone Project / Independent Study</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Associate Software Engineer</h3>
+      <div class="when">Nayagara Technologies &middot; Apr 2023&ndash;Mar 2024</div>
+      <ul>
+        <li>Developed and maintained Java and Spring Boot software as part of a cross-functional engineering team.</li>
+        <li>Worked with senior engineers on design, code reviews and debugging.</li>
+        <li>Contributed to a Health Insurance Plans Marketplace project (Java, Spring Boot, Hibernate, JSP, SQL).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="mono">end of file</div>
+  <p style="margin-top:10px">Let's talk: <a href="mailto:likhithamanikonda02@gmail.com">likhithamanikonda02@gmail.com</a></p>
+  <p class="mono" style="margin-top:14px">&copy; 2026 Likhitha</p>
+</footer>
 
 <script>
-// flip card
-const card=document.getElementById('idcard');
-card.addEventListener('click',()=>card.classList.toggle('flip'));
+// typed name
+(function(){
+  var el=document.getElementById('typed'),full='Likhitha',i=0;
+  el.textContent='';
+  (function t(){ if(i<=full.length){el.textContent=full.slice(0,i++);setTimeout(t,110)} })();
+})();
 
-// hero video
-const v=document.getElementById('hv'),ph=document.getElementById('vph'),snd=document.getElementById('snd');
-v.addEventListener('loadeddata',()=>{ph.style.display='none'});
-v.addEventListener('error',()=>{snd.style.display='none'});
-const label=()=>{snd.textContent=v.muted?'Tap for sound':'Mute'};
-v.addEventListener('ended',()=>{
-  snd.textContent='Replay';
-  // scroll to the next section if the visitor is still on the hero
-  setTimeout(()=>{
+// hero spotlight follows the pointer
+var hero=document.getElementById('top');
+hero.addEventListener('pointermove',function(e){
+  var r=hero.getBoundingClientRect();
+  hero.style.setProperty('--mx',(e.clientX-r.left)+'px');
+  hero.style.setProperty('--my',(e.clientY-r.top)+'px');
+});
+
+// badge flip
+var bd=document.getElementById('bd');
+bd.addEventListener('click',function(){bd.classList.toggle('flip')});
+
+// hero video: plays once, stops, then scrolls down
+var v=document.getElementById('hv'),ph=document.getElementById('vph'),snd=document.getElementById('snd');
+function label(){snd.textContent=v.muted?'tap for sound':'mute'}
+v.addEventListener('error',function(){snd.style.display='none';ph.style.display='flex'});
+v.addEventListener('ended',function(){
+  snd.textContent='replay';
+  setTimeout(function(){
     if(window.scrollY<window.innerHeight*0.6){
-      document.getElementById('id').scrollIntoView({behavior:'smooth'});
+      document.getElementById('badge').scrollIntoView({behavior:'smooth'});
     }
   },800);
 });
-snd.onclick=()=>{
+snd.addEventListener('click',function(){
   if(v.ended){v.currentTime=0;v.muted=false;v.play();label();return}
   v.muted=!v.muted;label();
-};
+});
 
-// skills table
-const skills=[
-['Py','Python','Language'],['Fl','Flask','Backend'],['Re','React','Frontend'],['JS','JavaScript','Language'],
-['C','C / C++','Language'],['Vl','Verilog HDL','Hardware'],['Ar','Arduino','Hardware'],['Ng','nginx','Infra'],
-['Dk','Docker','Infra'],['Pm','Podman','Infra'],['Jk','Jenkins','Infra'],['Li','Linux','Infra'],
-['Wz','Wazuh','Security'],['Si','SIEM','Security'],['Ed','EDR','Security'],['Ap','AppSec','Security'],
-['Pi','Prompt Injection','AI Security'],['Rg','RAG','AI'],['Gi','Git','Tools'],['Lt','LTspice','Hardware'],
-['Jv','Java','Language'],['Sb','Spring Boot','Backend'],['Hb','Hibernate','Backend'],['Sq','SQL','Data']
+// defense layers
+var layers=[
+  ['Application','Where the code lives',['Python','Java','Spring Boot','Hibernate','React','JavaScript','Flask','SQL']],
+  ['Infrastructure','Where it runs',['Linux','nginx','Docker','Podman','Jenkins','Git']],
+  ['Detection & response','Spotting trouble early',['Wazuh','SIEM','EDR','Log analysis','AppSec']],
+  ['AI security','Keeping AI systems safe',['RAG','LLMs','Prompt injection']],
+  ['Foundations','Where I started',['C / C++','Verilog HDL','Arduino','LTspice']]
 ];
-const pt=document.getElementById('pt');
-skills.forEach((s,i)=>{pt.insertAdjacentHTML('beforeend',`<div class="el"><small>${i+1}</small><b>${s[0]}</b><span>${s[1]}</span></div>`)});
+var lay=document.getElementById('lay');
+layers.forEach(function(l,i){
+  var d=document.createElement('div');
+  d.className='layer'+(i===0?' open':'');
+  d.innerHTML='<button><span class="num">L'+(i+1)+'</span><span class="name">'+l[0]+'<span class="mono" style="display:block;margin-top:2px;text-transform:none;letter-spacing:.02em">'+l[1]+'</span></span><span class="plus">+</span></button><div class="body"><div class="tags">'+l[2].map(function(t){return '<span class="tag">'+t+'</span>'}).join('')+'</div></div>';
+  d.querySelector('button').addEventListener('click',function(){d.classList.toggle('open')});
+  lay.appendChild(d);
+});
 
 // reveal on scroll
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.1});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
 </script>
 </body>
 </html>
