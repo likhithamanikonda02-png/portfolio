@@ -15,9 +15,12 @@
   <div class="feed">
     <span class="br tl"></span><span class="br tr"></span><span class="br bl"></span><span class="br brr"></span>
     <span class="live">LIVE</span>
-    <!-- hero.mp4 = your HeyGen video, photo.jpg = your photo -->
-    <video id="hv" src="hero1.mp4" poster="photo.jpg" muted playsinline autoplay></video>
-    <div class="ph" id="vph">hero.mp4 not found</div>
+    <!-- hero1.mp4 = your HeyGen video, photo.jpg = your photo -->
+    <video id="hv" poster="photo.jpg" muted playsinline autoplay preload="auto">
+      <source src="hero1f.mp4" type="video/mp4">
+      <source src="hero1.mp4" type="video/mp4">
+    </video>
+    <div class="ph" id="vph">hero1.mp4 not found</div>
     <button id="snd">tap for sound</button>
   </div>
   <h1>Hi, I'm <em id="typed">Likhitha</em><span class="cursor"></span></h1>
@@ -34,7 +37,7 @@
       <div class="face front">
         <div class="slot"></div>
         <div class="topline"><span>SECURITY TEAM</span><span>ID 001</span></div>
-        <div class="photo"><img src="photo,jpg" alt="Likhitha" onerror="var p=this.parentNode;this.remove();p.textContent='L'"></div>
+        <div class="photo"><img src="photo.jpg" data-alt="photo1.jpg" alt="Likhitha" onerror="var a=this.getAttribute('data-alt');if(a){this.removeAttribute('data-alt');this.src=a}else{var p=this.parentNode;this.remove();p.textContent='L'}"></div>
         <h3>Likhitha</h3>
         <div class="role">Cybersecurity Analyst</div>
         <dl>
@@ -166,7 +169,11 @@ bd.addEventListener('click',function(){bd.classList.toggle('flip')});
 // hero video: plays once, stops, then scrolls down
 var v=document.getElementById('hv'),ph=document.getElementById('vph'),snd=document.getElementById('snd');
 function label(){snd.textContent=v.muted?'tap for sound':'mute'}
-v.addEventListener('error',function(){snd.style.display='none';ph.style.display='flex'});
+// with several <source> tags, the error fires on the last one tried
+var srcs=v.querySelectorAll('source');
+srcs[srcs.length-1].addEventListener('error',function(){snd.style.display='none';ph.style.display='flex'});
+// if the phone blocks autoplay, show a clear play button instead of a frozen picture
+setTimeout(function(){if(v.paused&&!v.ended&&v.readyState>0){snd.textContent='play'}},2000);
 v.addEventListener('ended',function(){
   snd.textContent='replay';
   setTimeout(function(){
@@ -177,6 +184,7 @@ v.addEventListener('ended',function(){
 });
 snd.addEventListener('click',function(){
   if(v.ended){v.currentTime=0;v.muted=false;v.play();label();return}
+  if(v.paused){v.muted=false;v.play();label();return}
   v.muted=!v.muted;label();
 });
 
